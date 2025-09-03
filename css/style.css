@@ -484,7 +484,7 @@ h2 {
   color: #a8893d;
   font-weight: 500;
 }
-/* Wave for you */
+
 /* Wave for you */
 .section {
   text-align: center;
@@ -1058,7 +1058,6 @@ h2 {
   justify-content: center;
   min-height: 500px;
   overflow: hidden;
-  margin-top: -70px;
   /* Prevent horizontal scroll on small devices */
 }
 
@@ -1240,6 +1239,7 @@ h2 {
 @media (min-width: 708px) and (max-width: 991px) {
   .energy-spectrum-container {
     height: 450px;
+    margin-top: 1px;
   }
 
   .spectrum-image-wrapper img {
@@ -1385,6 +1385,7 @@ h2 {
     width: 100%;
     max-width: 1300px;
     height: 850px;
+    margin-top: 1px;
   }
 
   .spectrum-image-wrapper img {
@@ -1510,6 +1511,7 @@ h2 {
     width: 100%;
     max-width: 900px;
     height: 600px;
+    margin-top: 1px;
   }
 
   .spectrum-image-wrapper img {
