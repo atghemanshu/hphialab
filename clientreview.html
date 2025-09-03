@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>client review - Phia Lab</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Font (Montserrat) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+      <!-- Google Fonts link Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <!-- Link to your CSS file -->
+   
+
+    <link rel="stylesheet" href="css/style.css" />
+
+     <!-- Link to your JS file -->
+    <script src="js/main.js"></script>
+  </head>
+  <body style="font-family: 'Lato', sans-serif;
+      background-color: #f8f8f8;
+      color: #6d6d6d;
+      line-height: 1.7;
+      font-size: 16px;
+         /* margin: 0;
+        padding: 0; */
+    
+ ">
+ <!-- Header -->
+ <header class="sticky-header">
+      <!-- Top Bar -->
+<div class="container-fluid py-2 top-bar d-flex justify-content-between align-items-center">
+  <!-- Social Icons (desktop only) -->
+  <div class="d-none d-lg-flex align-items-center fs-5 ms-4">
+    <a href="https://www.facebook.com/PhiaLab/"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/phia.lab/"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.pinterest.com/mvroark/"><i class="fab fa-pinterest-p"></i></a>
+  </div>
+
+  <div class="text-center flex-grow-1">
+    90-Day Satisfaction Guarantee. FREE SHIPPING on U.S. orders over $90!
+  </div>
+
+  <!-- Search box (desktop only) -->
+  <div class="search-box d-none d-lg-flex me-4">
+    <input type="text" class="form-control" placeholder="Search...">
+    <button class="px-3"><i class="fas fa-search"></i></button>
+  </div>
+</div>
+
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white">
+    <div class="container d-flex align-items-center justify-content-between position-relative">
+
+      <!-- MOBILE TOGGLER (LEFT) -->
+      <button class="navbar-toggler d-lg-none" type="button"
+              data-bs-toggle="collapse" data-bs-target="#mobileMenu"
+              aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- DESKTOP LEFT MENU -->
+      <div class="d-none d-lg-flex justify-content-start ">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">ENERGY WAVES</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">180 Grounding</a></li>
+              <li><a class="dropdown-item" href="#">200 Adventure</a></li>
+              <li><a class="dropdown-item" href="#">220 Focus</a></li>
+              <li><a class="dropdown-item" href="#">240 Balance</a></li>
+              <li><a class="dropdown-item" href="#">260 Imagination</a></li>
+              <li><a class="dropdown-item" href="#">280 Charisma</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">ENERGY FIT</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">RESEARCH</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">ALCHEMY</a></li>
+        </ul>
+      </div>
+
+      <!-- CENTER LOGO -->
+      <a class="navbar-brand logo mx-0 px-0" href="#">
+        <img src="img\phia-logo.avif" alt="Logo">
+      </a>
+
+      <!-- DESKTOP RIGHT MENU -->
+      <div class="d-none d-lg-flex justify-content-end ">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link " href="#">PHILOSOPHY</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">COMPANY</a></li>
+           <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle me-5" href="#" data-bs-toggle="dropdown">SHOP PHIA</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Energy Bouquet</a></li>
+              <li><a class="dropdown-item" href="#">Illuminating Serum</a></li>
+              <li><a class="dropdown-item" href="#">Energy Mist</a></li>
+              <li><a class="dropdown-item" href="#">Crème de la Phia</a></li>
+              <li><a class="dropdown-item" href="#">Energizing Shampoo</a></li>
+              <li><a class="dropdown-item" href="#">Deep Conditioner</a></li>
+              <li><a class="dropdown-item" href="#">Alchemy Body Wash</a></li>
+              <li><a class="dropdown-item" href="#">Quantum Body Oil</a></li>
+              <li><a class="dropdown-item" href="#">Organic Lotion</a></li>
+              <li><a class="dropdown-item" href="#">Rocky Mt. Crystal Scrub</a></li>
+              <li><a class="dropdown-item" href="#">Matcha Facial Cleanser</a></li>
+              <li><a class="dropdown-item" href="#">Organic Loose Leaf Tea</a></li>
+              <li><a class="dropdown-item" href="#">Wellness Packages</a></li>
+              <li><a class="dropdown-item" href="#">Be A Force-The Book</a></li>
+            </ul>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+      <button class="btn px-3 py-1 d-flex align-items-center" style="color: #9e8844; font-weight: 600; ">
+        <span class="me-2">$0.00</span> <i class="fas fa-shopping-bag"></i>
+      </button>
+    </li>
+        </ul>
+      </div>
+
+      <!-- MOBILE CART (RIGHT) -->
+      <a href="#" class="cart-icon d-lg-none me-3 text-decoration-none">
+        $0.00 <i class="fas fa-shopping-bag"></i>
+      </a>
+
+      <!-- MOBILE COLLAPSIBLE MENU -->
+      <div class="collapse mobile-menu d-lg-none " id="mobileMenu">
+        <ul class="navbar-nav w-100 text-start">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">ENERGY WAVES</a>
+            <ul class="dropdown-menu ms-3">
+              <li><a class="dropdown-item" href="#">180 Grounding</a></li>
+              <li><a class="dropdown-item" href="#">200 Adventure</a></li>
+              <li><a class="dropdown-item" href="#">220 Focus</a></li>
+              <li><a class="dropdown-item" href="#">240 Balance</a></li>
+              <li><a class="dropdown-item" href="#">260 Imagination</a></li>
+              <li><a class="dropdown-item" href="#">280 Charisma</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">FIND MY ENERGY FIT</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">ALCHEMY</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">RESEARCH</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">PHILOSOPHY</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">COMPANY</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">SHOP PHIA</a>
+            <ul class="dropdown-menu ms-3">
+              <li><a class="dropdown-item" href="#">Energy Bouquet</a></li>
+              <li><a class="dropdown-item" href="#">Illuminating Serum</a></li>
+              <li><a class="dropdown-item" href="#">Energy Mist</a></li>
+              <li><a class="dropdown-item" href="#">Crème de la Phia</a></li>
+              <li><a class="dropdown-item" href="#">Energizing Shampoo</a></li>
+              <li><a class="dropdown-item" href="#">Deep Conditioner</a></li>
+              <li><a class="dropdown-item" href="#">Alchemy Body Wash</a></li>
+              <li><a class="dropdown-item" href="#">Quantum Body Oil</a></li>
+              <li><a class="dropdown-item" href="#">Organic Lotion</a></li>
+              <li><a class="dropdown-item" href="#">Rocky Mt. Crystal Scrub</a></li>
+              <li><a class="dropdown-item" href="#">Matcha Facial Cleanser</a></li>
+              <li><a class="dropdown-item" href="#">Organic Loose Leaf Tea</a></li>
+              <li><a class="dropdown-item" href="#">Wellness Packages</a></li>
+              <li><a class="dropdown-item" href="#">Be A Force-The Book</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    </nav>
+  </nav>
+
+ </header>
+
+
+    <!-- Main Content -->
+ 
+  <div class="container my-5 py-4 " style=" max-width: 1250px;">
+    <div class="row">
+      <!-- Main content -->
+      <div class="col-lg-8 main-content-area">
+        <!-- Post card -->
+        <article class="content-box" style="margin-top: 20%;">
+          <h1 class="post-title mt-5">Amazing Quantum Oil</h1>
+          <div class="meta">
+          <a href="#">Leave a Comment </a>/<a href="#">By Michelle Roark</a> / February 17, 2023
+          </div>
+          <p class="text-justify">
+            I just really had to say how amazing this quantum body oil is. Nothing else compares. It actually helps me with anxiety when nothing else does. I’ve tried other body oils, and while they are nice and good quality, nothing compares to the healing effect of this oil. It is very nurturing and my skin feels so soft. It also lasts a long time. The price really truly does match up with the value. Thanks so much. Hoping to order another bottle soon. Grateful, thank you.
+          </p>
+        </article>
+ 
+        <!-- Navigation -->
+        <nav class="nav-links">
+          <a href="#">&larr; Previous Testimonial</a>
+          <a href="#">Next Testimonial &rarr;</a>
+        </nav>
+ 
+        <!-- Comment box -->
+        <div class="content-box">
+          <h3 class="comment-reply-title">Leave a Reply</h3>
+          <p class="logged-in-text">You must be <a href="#">logged in</a> to post a comment.</p>
+        </div>
+      </div>
+ 
+      <!-- Sidebar -->
+      <aside class="col-lg-4 sidebar" style="margin-top: 13%;">
+        <!-- Search -->
+        <div class="widget">
+          <form role="search" method="get" class="search-box" action="#">
+             <input type="search" class="form-control search-field" placeholder="Search..." value="" name="s">
+             <button type="submit" class="search-submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+ 
+        <!-- Recent Posts -->
+        <div class="widget">
+          <h5 class="widget-title">Recent Posts</h5>
+          <ul>
+            <li><a href="#">Riffing Between the Lines: Zone = Complete Coherence</a></li>
+            <li><a href="#">Restoring the Rhythm of Earth One Beat at a Time</a></li>
+            <li><a href="#">We Need the Forest and the Forest Needs Us</a></li>
+            <li><a href="#">New Website “Open House”</a></li>
+          </ul>
+        </div>
+ 
+        <!-- Recent Comments -->
+        <div class="widget">
+          <h5 class="widget-title">Recent Comments</h5>
+          <p>Shirley Smith on <a href="#">Riffing Between the Lines: Zone = Complete Coherence</a></p>
+        </div>
+ 
+        <!-- Archives -->
+        <div class="widget">
+          <h5 class="widget-title">Archives</h5>
+          <ul>
+            <li><a href="#">May 2020</a></li>
+            <li><a href="#">August 2019</a></li>
+            <li><a href="#">July 2019</a></li>
+          </ul>
+        </div>
+ 
+        <!-- Categories -->
+        <div class="widget">
+          <h5 class="widget-title">Categories</h5>
+          <ul>
+            <li><a href="#">About Phia Lab</a></li>
+            <li><a href="#">Uncategorized</a></li>
+          </ul>
+        </div>
+ 
+        <!-- Meta -->
+        <div class="widget">
+          <h5 class="widget-title">Meta</h5>
+          <ul>
+            <li><a href="#">Log in</a></li>
+            <li><a href="#">Entries feed</a></li>
+            <li><a href="#">Comments feed</a></li>
+            <li><a href="#">WordPress.org</a></li>
+          </ul>
+        </div>
+       
+        <!-- Duplicated content from image for styling reference -->
+        <div class="widget" id="search-2">
+            <h5 class="widget-title">Search</h5>
+            <form role="search" method="get" class="search-box" action="#">
+                <input type="search" class="form-control search-field" placeholder="Search..." value="" name="s">
+                <button type="submit" class="search-submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div class="widget" id="recent-comments-2">
+            <h5 class="widget-title">Recent Comments</h5>
+            <p><a href="#">Shirley Smith</a> on <a href="#">Riffing Between the Lines: Zone = Complete Coherence</a></p>
+        </div>
+        <div class="widget" id="recent-posts-2">
+            <h5 class="widget-title">Recent Posts</h5>
+            <ul>
+                <li><a href="#">Riffing Between the Lines: Zone = Complete Coherence</a></li>
+                <li><a href="#">Restoring the Rhythm of Earth One Beat at a Time</a></li>
+                <li><a href="#">We Need the Forest and the Forest Needs Us</a></li>
+                <li><a href="#">New Website “Open House”</a></li>
+            </ul>
+        </div>
+        <div class="widget" id="archives-2">
+            <h5 class="widget-title">Archives</h5>
+            <ul>
+                <li><a href="#">May 2020</a></li>
+                <li><a href="#">August 2019</a></li>
+                <li><a href="#">July 2019</a></li>
+            </ul>
+        </div>
+        <div class="widget" id="categories-2">
+            <h5 class="widget-title">Categories</h5>
+            <ul>
+                <li><a href="#">About Phia Lab</a></li>
+                <li><a href="#">Uncategorized</a></li>
+            </ul>
+        </div>
+        <div class="widget" id="meta-2">
+            <h5 class="widget-title">Meta</h5>
+            <ul>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">Entries feed</a></li>
+                <li><a href="#">Comments feed</a></li>
+                <li><a href="#">WordPress.org</a></li>
+            </ul>
+        </div>
+        <!-- End of duplicated content -->
+ 
+        <div class="widget">
+            <p>[vc_single_image image="24046" img_size="163x66"][gem_divider margin_top="48"]</p>
+        </div>
+       
+        <div class="widget">
+          <p>TheGem is a versatile wp theme with modern creative design. Made as an ultimate toolbox of content elements, styles &amp; features, it helps people to build impressive high-performant websites. In minutes. Without coding.</p>
+        </div>
+ 
+        <!-- Email us -->
+        <div class="widget">
+          <h5 class="widget-title lowercase">email us</h5>
+          <p>[contact-form-7 id="4" title="Footer Contact form"]</p>
+        </div>
+ 
+        <!-- Useful links -->
+        <div class="widget">
+          <h5 class="widget-title">Useful links</h5>
+          <ul>
+            <li><a href="#">General Information For Users</a></li>
+            <li><a href="#">Interactive Fairy Tales</a></li>
+            <li><a href="#">Official Storybook Maker Website</a></li>
+            <li><a href="#">Everyday Mathematics Links</a></li>
+            <li><a href="#">Basic Knowledge and Experience</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+ 
+
+ 
+ <!--footer HTML structure-->
+    <footer class="phia-footer" style="background-color: white;">
+        <div class="container">
+            <!-- Newsletter Section -->
+            <div class="newsletter-section row align-items-center mb-4">
+                <div class="section-divider col-12">
+                    <img src="img/spectrum-divider.avif" alt="Divider" class="divider-icon">
+                </div>
+                <div class="col-lg-8 col-md-12 mx-auto">
+                    <h2 class="newsletter-title text-center">JOIN THE PHIA ENERGY WAVE</h2>
+                    <form class="newsletter-form">
+                        <div class="row newsletter-form-row g-3 justify-content-center">
+                            <div class="col-md-3 col-9">
+                                <input type="text" class="newsletter-input form-control" placeholder="First Name">
+                            </div>
+                            <div class="col-md-3 col-9">
+                                <input type="text" class="newsletter-input form-control" placeholder="Last Name">
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-xl-4  col-9">
+                                <input type="email" class="newsletter-input form-control" placeholder="Email">
+                            </div>
+                            <div class="col-xl-2 col-sm-4 col-md-3  col-4 d-grid">
+                                <button type="submit" class="newsletter-btn btn btn-join">JOIN NOW</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Main Footer Links Section -->
+            <div class="main-footer-section">
+                <div class="row">
+                    <!-- Column 1: Logo -->
+                    <div class="col-lg-3 col-md-6 ">
+                        <div class="footer-widget">
+                            <img src="img/phia-logo.avif" alt="Phia Logo" class="footer-logo">
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Energy Waves -->
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="widget-title">ENERGY WAVES</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">180 — Grounding</a></li>
+                                <li><a href="#">200 — Adventure</a></li>
+                                <li><a href="#">220 — Focus</a></li>
+                                <li><a href="#">240 — Balance</a></li>
+                                <li><a href="#">260 — Imagination</a></li>
+                                <li><a href="#">280 — Charisma</a></li>
+                                <li><a href="#">Find My Energy Fit</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Column 3: Company -->
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="widget-title">COMPANY</h3>
+                            <ul class="footer-links">
+                                <li><a href="">Company</a></li>
+                                <li><a href="#">Philosophy</a></li>
+                                <li><a href="#">Ingredients</a></li>
+                                <li><a href="#">Research</a></li>
+                                <li><a href="#">Giving Back</a></li>
+                                <li><a href="#">Phia Alchemy Salon Spa</a></li>
+                                <li><a href="#">Education</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Column 4: Store -->
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="widget-title">STORE</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Shipping & Returns</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms of Use</a></li>
+                                <li><a href="#">Find a Retailer</a></li>
+                                <li><a href="#">Events</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Column 5: Contact -->
+                    <div class="col-lg-3 col-md-12 ">
+                        <div class="footer-widget">
+                            <h3 class="widget-title">CONTACT PHIA</h3>
+                            <ul class="footer-contact">
+                                <li><a href="tel:720-853-8955" class="footer-phone-link">
+                                        <i class="fas fa-phone-alt"></i> 720-853-8955</a></li>
+                                <li> <a href="/contact-us" class="footer-email-link"> <i
+                                            class="fas fa-envelope"></i>Email Phia</a> </li>
+                                <li><a href="https://www.google.com/maps/place/2185+Broadway,+Denver,+CO+80205,+USA/@39.7525934,-104.9885082,16.5z/data=!4m6!3m5!1s0x876c78d8c507c0e1:0x2f8a7deae31d9306!8m2!3d39.7524892!4d-104.9876327!16s%2Fg%2F11nns6g6zj?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D"
+                                        class="footer-address-link" target="_blank" rel="noopener"><i
+                                            class="fas fa-map-marker-alt"></i> 720 Ogden Street
+                                        Denver, CO 80218</a></li>
+                            </ul>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com/PhiaLab/"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/phia.lab/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.pinterest.com/mvroark/"><i class="fab fa-pinterest"></i></a>
+                                <a href="https://www.linkedin.com/in/michelle-roark/?_ga=2.229817436.1931011923.1756792929-585233303.1753875038"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.yelp.com/biz/phia-alchemy-salon-spa-wellness-denver-3"><i class="fab fa-yelp"></i></a>
+                                <a href="https://www.google.com/maps/place/Phia+Alchemy+Salon+Spa/@39.7525659,-104.9897851,17z/data=!3m1!4b1!4m5!3m4!1s0x876c78e07a99a30f:0xa1f3204466a9db46!8m2!3d39.7525659!4d-104.9875964?shorturl=1"><i class="fab fa-google"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright Section -->
+            <div class="copyright-section">
+                <p>© 2019 Phia Lab</p>
+            </div>
+        </div>
+    </footer>
+
+
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+ 
+</body>
+</html>
