@@ -4,8 +4,131 @@ body {
   font-family: "Raleway", sans-serif;
   color: #545660;
 }
+/* ===== YouTube Fullscreen Fix ===== */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .video-container {
+    height: 100vh; /* Ensure full viewport height on mobile */
+  }
+}
+
+.video-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  border: none;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-wrapper iframe {
+    /* height = 100 * (9/16) = 56.25 */
+    height: 56.25vw;
+    width: 100vw;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .video-wrapper iframe {
+    /* width = 100 * (16/9) = 177.78 */
+    width: 177.78vh;
+    height: 100vh;
+  }
+}
+
+/* ===== Overlay Content ===== */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* content toward bottom */
+  align-items: center;
+  background: rgba(0, 0, 0, 0.35); /* dark overlay */
+  padding: 120px 20px 40px 20px; /* top, sides, bottom */
+  box-sizing: border-box;
+  text-align: center;
+}
+.video-overlay .product-img {
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+}
+.video-overlay .content {
+  text-align: center;
+  color: #fff;
+}
+.video-overlay .content h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.video-overlay .content p {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.video-overlay .btn {
+  margin: 5px;
+  border: 2px solid white;
+  color: white;
+  background: transparent;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 15px;
+  text-transform: uppercase;
+}
+.video-overlay .btn:hover {
+  background: white;
+  color: #9e8844;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .video-overlay {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    height: 100%; /* Full height coverage */
+  }
+  .video-overlay .product-img {
+    max-width: 200px;
+    margin-bottom: 15px;
+  }
+  .video-overlay .content h2 {
+    font-size: 2rem;
+  }
+  .video-overlay .content p {
+    font-size: 1rem;
+  }
+}
 /* ===== Carousel ===== */
-.carousel-item {
+/* .carousel-item {
   position: relative;
   height: 100vh;
 }
@@ -17,7 +140,7 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: 1;
-  transform: scale(1.2); /* increase image size slightly */
+  transform: scale(1.2); /* increase image size slightly 
 }
 
 .bg-overlay {
@@ -65,7 +188,7 @@ body {
 .content .btn:hover {
   background: white;
   color: #9e8844;
-}
+} */
 
 @media (max-width: 768px) {
   .overlay-content {
@@ -864,9 +987,11 @@ h2 {
 .ambassador-section .btn-ambassador {
   border-radius: 12px;
   border: 2px solid #a2873b;
-  color: #a2873b;
+  /* color: #a2873b; */
   font-size: 1.1rem;
   padding: 12px 40px;
+  text-align: white;
+  
 }
 
 /* ===== Salons & Spas Section ===== */
@@ -887,11 +1012,12 @@ h2 {
 .salons-section .btn-salon {
   border-radius: 12px;
   border: 2px solid #a2873b;
-  color: #a2873b;
+  /* color: #a2873b; */
   font-size: 1.1rem;
   padding: 16px 40px;
   font-weight: 500;
   letter-spacing: 1px;
+  text-align: white;
 }
 
 /* client review  */
@@ -1865,6 +1991,703 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 40px 0 30px 0; /* Increased bottom margin for more space */
+}
+
+.divider-icon {
+  max-width: 170px; /* Increased size from 100px to 170px */
+  filter: drop-shadow(0 0 3px rgba(158, 136, 68, 0.3)); /* Adding subtle glow */
+  transition: all 0.3s ease; /* Smooth transition for any hover effects */
+}
+
+/* Ensure proper sizing on different screens */
+@media (max-width: 768px) {
+  .divider-icon {
+    max-width: 140px; /* Slightly smaller on mobile but still prominent */
+  }
+
+  .section-divider {
+    margin: 30px 0 25px 0; /* Adjusted margins for mobile */
+  }
+}
+
+.newsletter-title {
+  /* COLOR: Set heading color to Gloden (#9e8844) */
+  color: #9e8844;
+  /* font-weight: 100;  */
+  font-size: 29px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.newsletter-form .form-control {
+  height: 50px;
+  font-size: 15px;
+  margin-bottom: px;
+  color: #545660;
+  background-color: #ffffff;
+  border: 2px solid #999999;
+  border-radius: 5px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.newsletter-form .form-control::placeholder {
+  color: #a9a9a9; /* A lighter grey for the placeholder */
+  opacity: 1;
+}
+
+.newsletter-form .form-control:focus {
+  border-color: #9e8844;
+  box-shadow: 0 0 0 0.2rem rgba(158, 136, 68, 0.25);
+  outline: 0;
+}
+
+.btn-join {
+  /* COLOR: Set button styles to use Accent color */
+  background-color: transparent;
+  border: 2px solid #9e8844;
+  color: #9e8844;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 6px;
+
+  width: 100%;
+  height: 50px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.btn-join:hover {
+  background-color: #9e8844;
+  color: #ffffff;
+}
+
+/* 
+   --- Main Footer Links Section ---
+*/
+.main-footer-section {
+  padding-top: 30px;
+}
+
+.footer-logo {
+  max-width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.widget-title {
+  color: #9e8844;
+
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.footer-links,
+.footer-contact {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-links li,
+.footer-contact li {
+  margin-bottom: 7px;
+
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+  color: #d2b55b;
+}
+
+.footer-contact i {
+  color: #9e8844;
+  margin-right: 12px;
+  font-size: 16px;
+}
+
+.footer-phone-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-phone-link:hover {
+  color: #d2b55b;
+}
+.footer-email-link,
+.footer-address-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-email-link:hover,
+.footer-address-link:hover {
+  color: #d2b55b;
+}
+
+.social-icons {
+  margin-top: 25px;
+}
+
+.social-icons a {
+  color: #9e8844;
+  font-size: 18px;
+  margin-right: 18px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #d6bc6b;
+  opacity: 1;
+}
+
+/* 
+   --- Copyright Section ---
+*/
+.copyright-section {
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 0px;
+  border-top: 1px solid #e5e5e5; /* Neutral border color */
+}
+
+.copyright-section p {
+  margin: 0;
+  font-size: 14px;
+  color: #9e8844;
+}
+
+/* ===================
+  Client Review Section 2- Read more section
+   =================== */
+a {
+  color: #b9975b;
+  text-decoration: none;
+}
+a:hover {
+  color: #a3854f;
+}
+
+.main-content-area {
+  padding-right: 30px;
+}
+
+.sidebar {
+  padding-left: 30px;
+}
+
+/* Card style for main content */
+.content-box {
+  background: #ffffff;
+  border: none;
+  padding: 40px;
+  margin-bottom: 30px;
+}
+
+.post-title {
+  font-family: "Lato", sans-serif;
+  font-size: 44px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #3a3a3a;
+  line-height: 1.2;
+}
+
+.meta {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  color: #b9975b;
+  margin-bottom: 28px;
+}
+
+.meta a {
+  color: inherit;
+}
+
+/* Nav links between posts */
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  font-size: 14px;
+  padding: 0 5px;
+}
+
+/* Comment Section Title */
+.comment-reply-title {
+  font-family: "Lato", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: #3a3a3a;
+  margin-bottom: 10px;
+}
+
+.logged-in-text {
+  font-size: 15px;
+}
+
+/* Sidebar widgets */
+.widget {
+  margin-bottom: 45px;
+}
+.widget-title {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  color: #3a3a3a;
+}
+
+.widget-title.lowercase {
+  text-transform: lowercase;
+}
+
+.widget ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.widget ul li {
+  margin-bottom: 12px;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.widget p {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* Search box with icon */
+.search-box {
+  position: relative;
+}
+.search-box input.search-field {
+  border-radius: 0;
+  font-size: 14px;
+  padding: 8px 15px;
+  border: 1px solid #e0e0e0;
+  height: 46px;
+  box-shadow: none;
+}
+.search-box input.search-field:focus {
+  border-color: #b9975b;
+}
+.search-box button.search-submit {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 46px;
+  width: 46px;
+  border: none;
+  background: transparent;
+  color: #777;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* === NEW MEDIA QUERY FOR MOBILE RESPONSIVENESS ADDED HERE === */
+@media (max-width: 991.98px) {
+  .container {
+    /* Adds space on the left and right of the screen */
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .main-content-area,
+  .sidebar {
+    /* Removes horizontal padding that was for the desktop gutter */
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .sidebar {
+    /* Adds space between main content and sidebar when stacked */
+    margin-top: 40px;
+  }
+  .content-box {
+    /* Reduces padding inside the white boxes on mobile */
+    padding: 25px;
+  }
+  .post-title {
+    /* Adjusts title size for mobile */
+    font-size: 32px;
+  }
+  .comment-reply-title {
+    /* Adjusts subtitle size for mobile */
+    font-size: 24px;
+  }
+}
+
+/* Client Review page-2 end */
+
+/* =============================
+   CART BUTTON (HEADER)
+   ============================= */
+.cart-btn {
+  color: #9e8844;
+  font-weight: 600;
+}
+
+/* =============================
+   WELLNESS PRODUCTS SECTION
+   ============================= */
+.wellness-products-section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* =============================
+   PRODUCT GROUP SECTION
+   ============================= */
+.product-group-section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* =============================
+   HIGHLIGHT TEXT SECTION
+   ============================= */
+.highlight-text-section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* =============================
+   PARTITION SECTION
+   ============================= */
+.partition-section {
+  margin-top: -50px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* =============================
+   WAVE FOR YOU SECTION
+   ============================= */
+.wave-for-you-section {
+  margin-top: 30px;
+}
+
+/* =============================
+   SUPERCHARGED SECTION
+   ============================= */
+.supercharged-section {
+  margin-top: 10px;
+}
+
+/* =============================
+   WHO BENEFITS SECTION
+   ============================= */
+.who-benefits-section {
+  margin-top: -5px;
+}
+.who-benefits-gallery {
+  margin-top: -50px;
+}
+
+/* =============================
+   SALON SECTION
+   ============================= */
+.salon-section {
+  margin-top: -50px;
+}
+.salon-title {
+  font-size: 1.8rem;
+  color: #a2873b;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.salon-desc {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 40px;
+}
+.salon-btn {
+  border-radius: 12px;
+  border: 2px solid #a2873b;
+  font-size: 1rem;
+  padding: 10px 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+/* Home Page CSS end index.html  */
+
+
+/* Phia philosophy */
+
+.image-banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* makes fade + corners neat */
+  border-top-left-radius: 30px; /* rounded top corners */
+  border-top-right-radius: 30px;
+  margin-top: -20px;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2); /* shadow effect */
+}
+
+.image-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+/*  bottom fade into white */
+.fade-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 100%,
+    /* fully clear at top of fade */ #fff 100% /* fully white at very bottom */
+  );
+}
+
+/* Center text */
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+  z-index: 2; /* text above fade */
+}
+
+/* Footer */
+
+.phia-footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-top: -50px;
+}
+
+/* 
+   --- Newsletter & Divider Section ---
+*/
+/* Minimal custom CSS for newsletter form, rely on Bootstrap grid */
+.search-box .input-group {
+  width: 220px;
+  height: 6px;
+}
+.search-box .form-control {
+  border-radius: 0.5rem 0 0 0.5rem;
+  background: #f5f6f7;
+  border: 1px solid #e5d7b3;
+  font-size: 15px;
+  color: #545660;
+}
+.search-box .form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #9e8844;
+}
+/* Make search button height smaller */
+.search-box .btn {
+  border-radius: 0 0.5rem 0.5rem 0;
+  border: 1px solid #9e8844;
+  color: #9e8844;
+  background: #fff;
+  font-weight: 600;
+  transition: background 0.3s, color 0.3s;
+  height: 35px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+.search-box .btn:hover {
+  background: #9e8844;
+  color: #fff;
+}
+.newsletter-section {
+  text-align: center;
+}
+
+.newsletter-form-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  max-width: 900px;
+  margin: 0 auto 25px auto;
+}
+
+.newsletter-input {
+  flex: 1 1 0;
+  min-width: 180px;
+  max-width: 300px;
+  height: 50px;
+  font-size: 15px;
+  color: #545660;
+  background-color: #fff;
+  border: 2px solid #999999;
+  border-radius: 5px;
+  padding: 0 18px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-family: "Raleway", sans-serif;
+}
+
+.newsletter-input::placeholder {
+  color: #a9a9a9;
+  opacity: 1;
+}
+
+.newsletter-input:focus {
+  border-color: #9e8844;
+  box-shadow: 0 0 0 0.2rem rgba(158, 136, 68, 0.18);
+  outline: none;
+}
+
+.newsletter-btn {
+  background: transparent;
+  border: 2px solid #9e8844;
+  color: #9e8844;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  padding: 0 32px;
+  height: 50px;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
+  min-width: 150px;
+}
+
+.newsletter-btn:hover {
+  background: #9e8844;
+  color: #fff;
+}
+
+.section-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0 10px 0;
+}
+
+.section-divider::before,
+.section-divider::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background-color: #d2b55b; /* Using a neutral light gray for dividers */
+  margin: 0 40px;
+}
+
+.divider-icon {
+  max-width: 100px;
+}
+
+.newsletter-title {
+  /* COLOR: Set heading color to Gloden (#9e8844) */
+  color: #9e8844;
+  /* font-weight: 100;  */
+  font-size: 29px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.newsletter-form .form-control {
+  height: 50px;
+  font-size: 15px;
+  margin-bottom: px;
+  color: #545660;
+  background-color: #ffffff;
+  border: 2px solid #999999;
+  border-radius: 5px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.newsletter-form .form-control::placeholder {
+  color: #a9a9a9; /* A lighter grey for the placeholder */
+  opacity: 1;
+}
+
+.newsletter-form .form-control:focus {
+  border-color: #9e8844;
+  box-shadow: 0 0 0 0.2rem rgba(158, 136, 68, 0.25);
+  outline: 0;
+}
+
+.btn-join {
+  /* COLOR: Set button styles to use Accent color */
+  background-color: transparent;
+  border: 2px solid #9e8844;
+  color: #9e8844;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 6px;
+
+  width: 100%;
+  height: 50px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.btn-join:hover {
+  background-color: #9e8844;
+  color: #ffffff;
+}
+
+/* 
+   --- Main Footer Links Section ---
+*/
+.phia-footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+/* 
+   --- Newsletter & Divider Section ---
+*/
+.newsletter-section {
+  text-align: center;
+}
+
+.newsletter-input::placeholder {
+  color: #a9a9a9;
+  opacity: 1;
+}
+
+.newsletter-input:focus {
+  border-color: #9e8844;
+  box-shadow: 0 0 0 0.2rem rgba(158, 136, 68, 0.18);
+  /* .newsletter-section and .newsletter-form-row layout styles removed for Bootstrap grid */
+  min-width: 150px;
+}
+
+.newsletter-btn:hover {
+  background: #9e8844;
+  color: #fff;
+}
+
+.section-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 40px 0 10px 0;
 }
 
@@ -2291,3 +3114,461 @@ a:hover {
   font-weight: 500;
   letter-spacing: 1px;
 }
+
+/* Enery.html Page css */
+
+/* Apply Raleway font globally */
+#body-id {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1rem; /* Base font size a little bigger */
+  line-height: 1.7; /* More readable */
+  color: #333;
+}
+
+/* Title */
+#page-title-id {
+  color: #a2873b;
+  font-size: 2rem; /* Larger heading */
+}
+
+/* Paragraphs */
+#paragraph-id {
+  font-size: 1.15rem; /* Larger than normal Bootstrap */
+  margin-bottom: 1rem;
+}
+
+/* List text */
+#list-id li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Button styling */
+#custom-btn-id {
+  background-color: #a2873b;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 30px;
+  border: none;
+  font-size: 1.1rem;
+}
+
+#custom-btn-id:hover {
+  background-color: #8b7130;
+}
+/* Energy.html Page css end */
+
+/* Company.html page CSS start///////////////////// */
+
+/* General Body Styles */
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #333;
+  line-height: 1.8;
+}
+
+/* Headings */
+#main-heading {
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 50px;
+  color: #9a883e;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+#sub-heading-company,
+#sub-heading-science,
+#sub-heading-sparkle,
+#sub-heading-giving {
+  text-align: center;
+  letter-spacing: 2px;
+  color: #9a883e;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+/* Paragraphs */
+#p-company-1,
+#p-company-2,
+#p-science-1,
+#p-science-2,
+#p-sparkle-1,
+#p-sparkle-2,
+#p-sparkle-3,
+#p-giving-quote,
+#p-giving-1,
+#p-bio-1,
+#p-bio-2,
+#p-bio-3,
+#p-bio-4 {
+  text-align: justify;
+  font-size: 17px;
+  margin-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Images */
+#img-company,
+#img-science,
+#img-giving,
+#img-bio {
+  border-radius: 0px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+}
+
+#img-science,
+#img-bio {
+  max-height: 600px;
+  object-fit: cover;
+}
+
+/* Donate Button */
+#btn-donate {
+  border: 2px solid #9a883e;
+  color: #9a883e;
+  background: transparent;
+  padding: 10px 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+#btn-donate:hover {
+  background: #9a883e;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* Company.html page CSS end///////////////////// */
+
+/* alchemy.html page CSS start///////////////////// */
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+
+#services-description {
+  text-align: justify;
+}
+
+/* Buttons */
+#btn-book,
+#btn-gift {
+  border: 2px solid #9a883e;
+  padding: 10px 20px;
+  font-weight: 600;
+  color: #9a883e;
+  background-color: transparent;
+  transition: 0.3s ease;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#btn-book:hover,
+#btn-gift:hover {
+  background: #9a883e;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Headings */
+#section-heading {
+  color: #9a883e;
+  font-weight: 300;
+}
+
+#sub-heading-services,
+#sub-heading-reviews,
+#sub-heading-gallery {
+  color: #9a883e;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+/* alchemy.html page CSS end///////////////////// */
+
+/* Blog.html page CSS start///////////////////// */
+
+/* Only affects the blog page */
+#blog-page {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  background-color: #f8f9fa;
+}
+
+/* Hero Section */
+#blog-page .hero-section {
+  font-family: 'Raleway', sans-serif;
+  background: url('Images/Phia-Salon_00003-1024x683.avif') center center / cover no-repeat;
+  height: 70vh;
+  position: relative;
+}
+
+#blog-page .hero-section .overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Event Cards */
+#blog-page .event-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+#blog-page .event-card:hover {
+  transform: translateY(-5px);
+}
+
+#blog-page .event-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#blog-page .event-divider {
+  height: 3px;
+  background-color: #9e8844;
+  margin: 10px 0;
+}
+
+#blog-page .event-meta i {
+  color: #777;
+  margin-right: 5px;
+}
+
+#blog-page .event-meta {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Headings */
+#blog-page h2 {
+  color: #9e8844;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+#blog-page h3 {
+  color: #9e8844;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+/* Button */
+#blog-page .read-more-btn {
+  border: 1px solid #9e8844;
+  color: #9e8844;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+#blog-page .read-more-btn:hover {
+  background-color: #9e8844;
+  color: #fff;
+}
+
+/* Only affects the single blog post page */
+/* ===== Blog Page Styles ===== */
+#single-blog-page {
+  font-family: 'Raleway', sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 17px;
+  line-height: 1.8;
+  padding: 0;
+  margin: 0;
+}
+ 
+/* Blog Header */
+#single-blog-page .blog-title {
+  color: #9a883e;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+ 
+#single-blog-page .blog-subtitle {
+  color: #6c757d; /* muted gray */
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+ 
+/* Blog Image */
+#single-blog-page img {
+  display: block;
+ 
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  max-height: 600px;
+  width: 100%;
+}
+ 
+/* Blog Content */
+#single-blog-page .content p {
+  margin-bottom: 1rem;
+  text-align: justify;
+  font-size: 17px;
+  font-weight: 400;
+}
+ 
+/* Blog Headings inside content */
+#single-blog-page .blog-heading {
+  color: #9a883e;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+ 
+/* Button */
+#single-blog-page .btn-custom {
+  background-color: #9a883e;
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+ 
+#single-blog-page .btn-custom:hover {
+  background-color: #7c6c2d;
+  color: #fff;
+}
+ 
+ 
+/* blog.html page CSS end///////////////////// */ 
+
+/* philosophy.html page CSS start ///////////////////// */ 
+/* =============================================== */
+/* ================================
+   PHILOSOPHY PAGE ONLY
+================================ */
+#philosophy-page {
+  font-family: 'Raleway', sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 17px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+/* Shared heading style */
+#philosophy-page h2.section-title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #9e8844;
+}
+
+/* PHILOSOPHY heading */
+#philosophy-page h2.section-title.philosophy-title {
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+}
+
+/* INGREDIENTS + PHI headings */
+#philosophy-page h2.section-title.sub-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+/* Body text */
+#philosophy-page p {
+  font-size: 17px;
+  font-weight: 400;
+  color: #333333;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+#philosophy-page .text-justify {
+  text-align: justify;
+}
+
+/* Ingredient List */
+#philosophy-page .ingredient-inline {
+  line-height: 1.8;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+
+/* Images */
+#philosophy-page .phi-img {
+  max-width: 320px;
+  height: auto;
+}
+
+/* Section spacing */
+#philosophy-page section.sub-section {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important; /* fixed missing value */
+}
+
+/* Responsive scaling */
+@media (max-width: 992px) {
+  #philosophy-page h2.section-title.philosophy-title {
+    font-size: 2.2rem;
+  }
+  #philosophy-page h2.section-title.sub-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #philosophy-page h2.section-title.philosophy-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  #philosophy-page h2.section-title.sub-title {
+    font-size: 1.3rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  /* Text */
+  #philosophy-page p,
+  #philosophy-page .ingredient-inline {
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  /* Images */
+  #philosophy-page img.img-fluid {
+    max-width: 95%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 6px;
+  }
+}
+/* philosophy.html page CSS end ///////////////////// */
