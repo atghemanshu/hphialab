@@ -3572,3 +3572,742 @@ body {
   }
 }
 /* philosophy.html page CSS end ///////////////////// */
+
+/* Research.html page CSS start ///////////////////// */
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.9; /* better readability */
+}
+
+/* Science */
+#science-title {
+  font-size: 3rem; /* bigger */
+  font-weight: 400;
+  color: #9e8844;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 0.8rem;
+}
+#science-subtitle {
+  font-size: 1.7rem; /* slightly bigger */
+  font-weight: 700;
+  color: #9e8844;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  letter-spacing: 1.2px;
+}
+#science-text {
+  font-size: 1.1rem; /* increased */
+  line-height: 1.9;
+  color: #333333;
+  font-weight: 300;
+  text-align: justify;
+  margin-bottom: 1.5rem;
+  margin-top: -50px;
+}
+#science-img {
+  max-width: 80%;
+  display: block;
+  margin: 0 auto 1.5rem auto; /* spacing below image */
+}
+
+/* Discoveries */
+#discoveries-title {
+  font-size: 2.4rem; /* slightly bigger */
+  font-weight: 600;
+  color: #9e8844;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  margin-top: -50px;
+}
+#discoveries-list {
+  list-style-type: disc;
+  padding-left: 2rem;
+  font-size: 1.1rem; /* bigger */
+  line-height: 2;
+  font-weight: 300;
+  color: #333;
+  margin-bottom: 2rem;
+}
+#discoveries-section {
+  padding: 3.5rem 0;
+}
+#colorscents-img,
+#interference-img {
+  max-width: 70%;
+  height: auto;
+  margin:  0; /* spacing above and below images */
+  margin-top: -50px;
+}
+
+/* Traditional */
+#traditional-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #9e8844;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+#traditional-text {
+  font-size: 1.1rem;
+  line-height: 2;
+  font-weight: 300;
+  color: #333;
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+
+/* Supercharged */
+#supercharged-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #9e8844;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+#supercharged-text {
+  font-size: 1.1rem;
+  line-height: 2;
+  font-weight: 300;
+  color: #333;
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+
+/* Book */
+#book-title {
+  font-size: 2.5rem; /* bigger */
+  font-weight: 700;
+  color: #9e8844;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+#book-subtitle {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #9e8844;
+  /* margin-bottom: 10px; */
+}
+.book-text {
+  font-size: 1.1rem;
+  line-height: 2;
+  color: #333;
+  text-align: justify;
+  /* margin-bottom: 1.5rem; */
+  
+}
+#book-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1.5rem;
+}
+
+/* Signature */
+#signature-img {
+  max-width: 260px;
+  margin-bottom: 1rem;
+}
+#buy-btn {
+  border: 2px solid #9e8844;
+  color: #9e8844;
+  padding: 12px 30px; /* bigger button */
+  border-radius: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+#buy-btn:hover {
+  background-color: #9e8844;
+  color: #fff;
+}
+/* Research.html page CSS end ///////////////////// */
+
+/* Education Page Footer start///////////////////// */
+ body {
+            background-color: #fff;
+        }
+
+        .head {
+            text-align: center;
+            margin: 40px 0;
+            font-family: 'Raleway', sans-serif;
+            font-size: 40px;
+            font-weight: 400;
+            /* matches screenshot */
+            letter-spacing: 4px;
+            /* adds elegant spacing */
+            text-transform: uppercase;
+            color: #9E8844;
+            /* exact color from screenshot */
+        }
+
+
+        .video-container-yt {
+            margin-bottom: 40px;
+        }
+
+        iframe {
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Education Page Footer end///////////////////// */
+
+/* ===================
+    privacypolicy page CSS start ///////////////////// */
+    /* General Body Styling */
+#body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+#container {
+  padding: 40px 15px;
+  max-width: 1140px;
+  margin: auto;
+}
+
+/* Main Heading */
+#mainHeading {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 15px;
+  letter-spacing: 5px;
+  font-size: 3rem;
+  color: #9a883e; /* golden brown */
+}
+
+/* Sub Heading */
+#subHeading {
+  text-align: center;
+  /* text-transform: uppercase; */
+  font-weight: 200;
+  margin-bottom: 30px;
+  letter-spacing: 4px;
+  font-size: 1.30rem;
+  color: #9a883e;
+}
+
+/* Section Headings - SAME STYLE */
+#section1, #section2, #section3, #section4,
+#section5, #section6, #section7, #section8, #section9 {
+  text-align: center;
+  /* text-transform: uppercase; */
+  font-weight: 300;
+  font-size: 1.50rem;
+  letter-spacing: 4px;
+  margin: 30px 0 20px;
+  color: #9a883e;
+}
+
+/* Paragraphs */
+#paragraph1, #paragraph2, #paragraph3, #paragraph4,
+#paragraph5, #paragraph6, #paragraph7, #paragraph8,
+#paragraph9, #paragraph10, #paragraph11, #paragraph12,
+#paragraph13, #paragraph14, #paragraph15, #paragraph16,
+#paragraph17, #paragraph18 {
+  text-align: justify;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* Lists */
+#list1, #list2, #list3 {
+  margin: 20px 0;
+  padding-left: 20px;
+  text-align: justify;
+}
+
+/* Links inside paragraphs */
+a {
+  color: #9a883e;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  #mainHeading {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+  }
+  #subHeading {
+    font-size: 1.1rem;
+  }
+  #section1, #section2, #section3, #section4,
+  #section5, #section6, #section7, #section8, #section9 {
+    font-size: 1.05rem;
+  }
+  #paragraph1, #paragraph2, #paragraph3, #paragraph4,
+  #paragraph5, #paragraph6, #paragraph7, #paragraph8,
+  #paragraph9, #paragraph10, #paragraph11, #paragraph12,
+  #paragraph13, #paragraph14, #paragraph15, #paragraph16,
+  #paragraph17, #paragraph18 {
+    font-size: 0.95rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  #mainHeading {
+    font-size: 1.25rem;
+  }
+  #subHeading {
+    font-size: 1rem;
+  }
+}
+/* ===================
+    privacypolicy page CSS end ///////////////////// */
+
+    /* FAQ page CSS start ///////////////////// */ 
+
+    body {
+  font-family: 'Raleway', sans-serif;
+}
+
+#faq-section {
+  padding: 40px 40px;
+}
+
+#faq-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #a38e4d; /* golden color */
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Accordion Buttons */
+#accordion-button-one,
+#accordion-button-two,
+#accordion-button-three,
+#accordion-button-four,
+#accordion-button-five,
+#accordion-button-six {
+  font-weight: 400;
+  color: #000000;
+  background: #fff;
+  padding: 30px;
+  font-family: 'Raleway', sans-serif;
+}
+
+#accordion-button-one:focus,
+#accordion-button-two:focus,
+#accordion-button-three:focus,
+#accordion-button-four:focus,
+#accordion-button-five:focus,
+#accordion-button-six:focus {
+  box-shadow: none;
+}
+
+#accordion-button-one::after,
+#accordion-button-two::after,
+#accordion-button-three::after,
+#accordion-button-four::after,
+#accordion-button-five::after,
+#accordion-button-six::after {
+  background-image: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  content: "+";
+  font-size: 35px;
+  color: #000000;
+}
+
+#accordion-button-one:not(.collapsed)::after,
+#accordion-button-two:not(.collapsed)::after,
+#accordion-button-three:not(.collapsed)::after,
+#accordion-button-four:not(.collapsed)::after,
+#accordion-button-five:not(.collapsed)::after,
+#accordion-button-six:not(.collapsed)::after {
+  content: "−"; /* minus sign */
+}
+
+/* Accordion Bodies */
+#accordion-body-one,
+#accordion-body-two,
+#accordion-body-three,
+#accordion-body-four,
+#accordion-body-five,
+#accordion-body-six {
+  color: #d2b55b;
+  background: #fff;
+  font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
+  margin-left: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #faq-title {
+    font-size: 0.5rem;
+  }
+  #accordion-button-one,
+  #accordion-button-two,
+  #accordion-button-three,
+  #accordion-button-four,
+  #accordion-button-five,
+  #accordion-button-six {
+    font-size: 0.7rem;
+    padding: 15px;
+  }
+}
+
+/* FAQ Footer page CSS end ///////////////////// */
+
+/* Shipping & returns page footer CSS start ///////////////////// */
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+    margin: 40px;
+}
+
+#shipping-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#shipping-title {
+    font-size: 2.9rem;
+    color: #9e8844; /* golden color */
+    margin-bottom: 30px;
+}
+
+#shipping-subtitle {
+    font-size: 1.5rem;
+    color: #9e8844;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#shipping-text {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-weight: 400;
+}
+
+/* shipping & returns page footer CSS end ///////////////////// */
+
+
+/* Terms Of Use page CSS start /////////////////////  */
+
+/* Import Raleway from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap');
+
+/* General Body */
+.service {
+  font-family: 'Raleway', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Main Page Title (TERMS OF SERVICE) */
+.service h1 {
+  font-weight: 200;          /* thin style */
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #9a8844;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Sub Headings */
+.service h4 {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #9a8844;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.service h6 {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #9a8844;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Section Headings */
+.service h5 {
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  color: #9a8844;
+  margin: 1.5rem 0;
+  letter-spacing: 2px;
+}
+
+/* Paragraphs */
+/* Paragraphs - no extra gap */
+.service p {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;   /* reduced gap, or set to 0 if you want none */
+  color: #333;
+  line-height: 1.6;        /* keeps it readable without big spacing */
+}
+
+
+/* Links */
+.service a {
+  color: #9a8844;
+  text-decoration: none;
+}
+.service a:hover {
+  text-decoration: underline;
+}
+
+/* Special styling for Section 12 (Prohibited Uses) */
+#section-12 p {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+ 
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+  .service {
+    padding-left: 1rem;  /* left padding for mobile */
+    padding-right: 1rem; /* right padding for mobile */
+  }
+
+  .service h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  .service h4 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .service h6 {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .service h5 {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    letter-spacing: 1px;
+  }
+
+  .service p {
+    font-size: 0.95rem;
+    margin-bottom: 0.15rem;
+    line-height: 1.5;
+  }
+
+  #section-12 p {
+    font-size: 0.95rem;
+    margin-top: 1rem;
+    text-align: start;
+  }
+}
+
+/* Terms Of Use page CSS end /////////////////////  */
+
+/* Event Page CSS start /////////////////////  */
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Search Bar Container */
+#searchContainer-fluid {
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 1200px;
+  border-radius: 8px;
+  width: 90%;
+}
+
+#searchGroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+/* Input Group Styling */
+.input-group {
+  flex-grow: 1;
+  min-width: 0;
+}
+
+/* Apply border-right only on large screens */
+@media (min-width: 992px) {
+  .input-group:not(:last-child) {
+    border-right: 1px solid #dee2e6;
+    padding-right: 15px;
+    margin-right: 15px;
+  }
+}
+
+.input-group-text {
+  background: transparent;
+  border: none;
+  color: #6c757d;
+  font-size: 1.2rem;
+}
+
+.form-control {
+  border: none;
+  box-shadow: none;
+  font-size: 1rem;
+  height: 38px;
+  border-radius: 0;
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Search Button */
+#searchButton {
+  background: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  height: 38px;
+  white-space: nowrap;
+}
+
+#searchButton:hover {
+  background: #084bdb;
+}
+
+/* UPDATED: Filter Button Style */
+#filterButton {
+    border: 1px solid #dee2e6;
+    background-color: transparent;
+    color: #6c757d;
+    height: 38px;
+    width: 38px; /* Makes button square */
+    padding: 0; /* Removes padding to center icon */
+    font-size: 1.1rem;
+    border-radius: 6px;
+    /* Flex properties to center the icon */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#filterButton:hover {
+    background-color: #e9ecef;
+}
+
+/* Event Cards */
+.event-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.2s;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+.event-card img {
+  width: 100%;
+  height: 200px; /* Default height for large screens */
+  object-fit: cover;
+  border-bottom: 2px solid #8bc34a; /* Using a green from the image */
+}
+
+.event-card-body {
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.event-card h6 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+
+.event-card p {
+  margin: 3px 0;
+  font-size: 0.9rem;
+}
+
+.event-card a {
+  text-decoration: none;
+  color: #0d6efd;
+}
+
+/* Responsive Grid */
+@media (max-width: 1200px) {
+  .event-card img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .event-card img {
+    height: 200px; /* UPDATED: Increased height for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .event-card img {
+    height: 280px; /* UPDATED: Increased height for phones */
+  }
+
+  .event-card h6 {
+    font-size: 1rem; /* UPDATED: Adjusted font size */
+    font-weight: 700; /* UPDATED: Made title bolder on mobile */
+  }
+
+  .event-card p {
+    font-size: 0.85rem;
+  }
+}
+
+/* event page CSS end /////////////////////   */
