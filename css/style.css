@@ -962,7 +962,8 @@ h2 {
 .instagram-section .btn-load {
   border-radius: 8px;
   border: 2px solid #a2873b;
-  color: #a2873b;
+  /* color: #a2873b; */
+  text-align: white;
 }
 
 .instagram-section .btn-follow {
@@ -993,6 +994,8 @@ h2 {
   text-align: white;
   
 }
+
+/* Instagram section end */
 
 /* ===== Salons & Spas Section ===== */
 .salons-section h3 {
