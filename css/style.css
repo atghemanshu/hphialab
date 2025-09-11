@@ -1,6 +1,6 @@
 body {
   background: #fff;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
   font-family: "Raleway", sans-serif;
   color: #545660;
 }
@@ -86,11 +86,18 @@ body {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 10px;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  margin-top: -10px;
+
 }
 .video-overlay .content p {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
+  font-family: 'Raleway', sans-serif;
   margin-bottom: 20px;
-  font-weight: 600;
+  font-weight: 200;
+  justify-content: center;
+  line-height: 50px;
 }
 .video-overlay .btn {
   margin: 5px;
@@ -452,23 +459,59 @@ body {
     color: #9e8844 !important;
   }
 }
+/* ////////////////////////Header end//////////////////////////// */
 
-/* Headings */
-h1,
-h2 {
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #a2873b; /* Gold */
+/* Headings wellness product */
+
+.flowerw-img {
+  width: 17%; /* or use max-width: 300px; */
+  height: auto; /* maintains aspect ratio */
 }
 
-/* Paragraph styles */
-.section-text {
-  font-size: 1rem;
-  font-weight: 400;
-  color: #555;
-  line-height: 1.8;
-  text-align: justify;
+/* wellness product heading////////// */
+
+.wellnessheading {
+
+   font-weight: bold;
+  /* font-weight: bolder; */
+  font-size: 2.5rem;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #9e8844; /* Gold */
+}
+
+
+/* michelle and quantum heading//////////////// */
+h2 {
+  font-weight:bold;
+  /* font-weight: bolder; */
+  font-size: 1.8rem;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  
+  color: #9e8844; /* Gold */
+}
+
+/* Paragraph styles michelle and quantum*/
+/* .section-text {
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #333333; /* Golden Brown */
+    /* line-height: 1.9;
+    text-align: justify;
+  } */ 
+
+.ENGINEERED{
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+    /* font-weight: 100; */
+    color: #9e8844; /* Golden Brown */
+    line-height: 1.2;
+    text-align: center;
 }
 
 /* Buttons */
@@ -485,6 +528,8 @@ h2 {
   background-color: #9e8844;
   color: #fff;
 }
+/* Headings wellness product end */
+
 
 /* Decorative elements */
 .flower-img {
@@ -492,10 +537,11 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Highlight text */
+/* Highlight text NATURAL ENERGIES */
 .highlight-text {
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 2.5rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
   letter-spacing: 2px;
   line-height: 1.4;
   text-transform: uppercase;
@@ -512,6 +558,15 @@ h2 {
     letter-spacing: 1.2px;
   }
 }
+/* Paragraph styles michelle and quantum*/
+.section-text {
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #333333; /* Golden Brown */
+    line-height: 1.9;
+    text-align: justify;
+  }
 
 /* Images */
 .profile-img {
@@ -525,28 +580,40 @@ h2 {
   max-width: 250px;
   margin-bottom: 20px;
 }
-/* card  */
+/* card how to use phia products  */
 .how-to-use {
   border: 2px solid #d4b253;
-  border-radius: 15px;
-  padding: 50px 20px;
+  border-radius: 40px;
+  /* padding: 50px 60px; */
+  padding-left: 60px;
+  padding-right: 60px;
+  
+
 }
 
 .section-title {
-  font-size: 23px;
-  font-weight: 500;
+  font-size: 40px;
+  font-weight: lighter;
+  font-style: normal;
   letter-spacing: 1px;
-  color: #a8893d;
+  font-family: 'Raleway', sans-serif;
+  color: #9e8844;
 }
 
 .step-title {
   font-weight: bold;
+  font-size: 25px;
+  font-family: 'Raleway', sans-serif;
   color: #d2b55b;
+  line-height: 1.2;
+  letter-spacing: 1px;
 }
 
 .step-text {
-  font-size: 19px;
+  font-size: 20px;
   color: #9e8844;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 20px;
 }
 
 .icon {
@@ -555,8 +622,8 @@ h2 {
 }
 
 .icon img {
-  max-width: 120px;
-  opacity: 0.4;
+  max-width: 160px;
+  /* opacity: 0.4; */
 }
 
 .icon .number {
@@ -571,6 +638,7 @@ h2 {
 
 /* Wave for you */
 .section {
+  font-family: 'Raleway', sans-serif;
   text-align: center;
   padding: 80px 20px;
   max-width: 900px;
@@ -578,17 +646,19 @@ h2 {
 }
 
 .section img {
-  max-width: 150px;
-  margin-bottom: 20px;
-  opacity: 1.5; /* faded look */
+  max-width: 200px;
+  margin-bottom: 10px;
+  opacity: 1; /* faded look */
 }
 
 .section h2 {
-  font-size: 2.2rem;
+  font-size: 8rem;
   color: #a8903b; /* golden color */
-  font-weight: 400; /* lighter look */
+  font-weight: 800; /* lighter look */
   letter-spacing: 2px;
   margin-bottom: 20px;
+  /* margin-top: -80px; */
+  font-family: 'Raleway', sans-serif;
 }
 
 .section p {
@@ -725,6 +795,7 @@ h2 {
   text-align: center;
   padding: 20px 10px;
   margin-top: -50px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .stats-section h2 {
@@ -734,6 +805,7 @@ h2 {
   margin-bottom: 40px;
   text-transform: uppercase;
   letter-spacing: 1px;
+   font-family: 'Raleway', sans-serif;
 }
 
 .stats-container {
@@ -741,6 +813,7 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 30px;
   justify-items: center;
+   font-family: 'Raleway', sans-serif;
 }
 
 .stat-box {
@@ -748,18 +821,26 @@ h2 {
 }
 
 .stat-box img {
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition */
 }
+
+.stat-box img:hover {
+  transform: scale(1.1); /* Slight zoom-in effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Optional shadow on hover */
+}
+
 
 .stat-box h3 {
   font-size: 28px;
   color: #d2b55b; /* golden number */
   margin: 5px 0;
   font-weight: bold;
+  font-family: 'Raleway', sans-serif;
 }
 
 .stat-box p {
@@ -767,6 +848,7 @@ h2 {
   color: #9e8844;
   margin: 0;
   line-height: 1.4;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* Responsive tweaks */
@@ -781,6 +863,7 @@ h2 {
 /* Info Section */
 .info-section {
   padding: 60px 20px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .info-section h2 {
@@ -788,6 +871,7 @@ h2 {
   font-weight: bold;
   color: #ab8844; /* Golden Brown */
   letter-spacing: 1px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .button-group {
@@ -808,6 +892,7 @@ h2 {
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-family: 'Raleway', sans-serif;
 }
 
 .custom-btn:hover {
@@ -819,6 +904,7 @@ h2 {
   max-width: 900px;
   margin: 80px auto;
   padding: 20px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .section img {
@@ -832,6 +918,7 @@ h2 {
   letter-spacing: 3px;
   color: #9e8844; /* golden brown text */
   margin-bottom: 30px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .section p {
@@ -839,6 +926,7 @@ h2 {
   line-height: 1.8;
   color: #444;
   margin-bottom: 0%;
+  font-family: 'Raleway', sans-serif;
   /* text-align: justify; */
 }
 /* image gallery */
@@ -865,6 +953,7 @@ h2 {
   gap: 20px; /* space between text and button */
   margin: 40px 0;
   margin-top: -10px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .story-section h2 {
@@ -873,6 +962,7 @@ h2 {
   color: #9f8852;
   letter-spacing: 1px;
   margin: 0;
+  font-family: 'Raleway', sans-serif;
 }
 
 .btn {
@@ -886,6 +976,7 @@ h2 {
   cursor: pointer;
   border-radius: 8px;
   transition: all 0.3s ease;
+  font-family: 'Raleway', sans-serif;
 }
 
 .btn:hover {
@@ -1004,12 +1095,14 @@ h2 {
   font-weight: 400;
   letter-spacing: 2px;
   margin-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .salons-section p {
   font-size: 1.2rem;
   color: #444;
   margin-bottom: 40px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .salons-section .btn-salon {
@@ -1021,6 +1114,7 @@ h2 {
   font-weight: 500;
   letter-spacing: 1px;
   text-align: white;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* client review  */
@@ -1036,6 +1130,7 @@ h2 {
   margin-bottom: 50px;
   letter-spacing: 2px;
   font-weight: lighter;
+  font-family: 'Raleway', sans-serif;
 }
 
 .testimonial-container {
@@ -1057,6 +1152,7 @@ h2 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* Image wrapper */
@@ -1085,6 +1181,7 @@ h2 {
   font-weight: 700;
   margin-bottom: 15px;
   color: #0b0f29;
+  font-family: 'Raleway', sans-serif;
 }
 
 .testimonial-card p {
@@ -1092,6 +1189,7 @@ h2 {
   line-height: 1.6;
   margin-bottom: 20px;
   color: #333;
+  font-family: 'Raleway', sans-serif;
 }
 
 .testimonial-card .author {
@@ -1104,6 +1202,7 @@ h2 {
   color: #9e8844;
   font-weight: 500;
   text-decoration-line: none;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* ===================
@@ -1144,7 +1243,9 @@ h2 {
 }
 
 /* Client review end */
-
+/* energy-spectrum-start//////////////////// */
+/* energy-spectrum-start//////////////////// */
+ 
 .energy-spectrum-section {
   padding: 40px 0;
   display: flex;
@@ -1154,57 +1255,56 @@ h2 {
   overflow: hidden;
   /* Prevent horizontal scroll on small devices */
 }
-
 .energy-spectrum-container {
   position: relative;
   margin: auto;
 }
-
+ 
 .spectrum-image-wrapper {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+ 
 .spectrum-image-wrapper img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-
+ 
 /* Base style for all energy items */
 .energy-item {
   position: absolute;
   font-family: "Montserrat", sans-serif;
   z-index: 5;
 }
-
+ 
 /* Color-specific styles */
 .focus-color {
   color: #8cc63f;
 }
-
+ 
 .balance-color {
   color: #3d7d6d;
 }
-
+ 
 .adventure-color {
   color: #f15a29;
 }
-
+ 
 .imagination-color {
   color: #7d5ba6;
 }
-
+ 
 .grounding-color {
   color: #a0522d;
 }
-
+ 
 .charisma-color {
   color: #d63384;
 }
-
+ 
 /* --- MOBILE FIRST STYLES (< 768px) --- */
 /* This is the default state */
 .energy-spectrum-container {
@@ -1213,11 +1313,11 @@ h2 {
   position: relative;
   margin-top: -60px;
 }
-
+ 
 .spectrum-image-wrapper img {
   width: 200px;
 }
-
+ 
 /* Gold line for all screen sizes - horizontal line style */
 .desktop-content .gold-line {
   height: 2px;
@@ -1227,100 +1327,100 @@ h2 {
   display: block;
   border-radius: 1px;
 }
-
+ 
 .energy-item .desktop-content {
   display: none;
   /* Hide detailed text on small mobile */
 }
-
+ 
 .energy-item .mobile-content {
   display: block;
   font-size: 1.3rem;
   font-weight: 700;
 }
-
+ 
 /* Mobile positioning - improved to avoid negative positions */
 .focus-item {
   top: 70px;
   left: 32%;
   transform: translateX(-80%);
 }
-
+ 
 .balance-item {
   top: 70px;
   right: 101px;
 }
-
+ 
 .adventure-item {
   top: 53%;
   left: 35px;
   transform: translateY(-100%);
 }
-
+ 
 .imagination-item {
   top: 54%;
   right: 32px;
   transform: translateY(-100%);
 }
-
+ 
 .grounding-item {
   bottom: 70px;
   left: 113px;
 }
-
+ 
 .charisma-item {
   bottom: 70px;
   right: 110px;
 }
-
+ 
 /* Small tablets (441px - 707px) - Numbers Only View */
 @media (min-width: 441px) and (max-width: 707px) {
   .energy-spectrum-container {
     height: 480px;
   }
-
+ 
   .spectrum-image-wrapper img {
     width: 270px;
   }
-
+ 
   /* Hide desktop content and show mobile content (numbers only) */
   .energy-item .desktop-content {
     display: none;
   }
-
+ 
   .energy-item .mobile-content {
     display: block;
     font-size: 1.5rem;
     font-weight: 700;
   }
-
+ 
   /* Better positioning for the numbers */
   .focus-item {
     top: 66px;
     left: 34%;
     transform: translateX(-50%);
   }
-
+ 
   .balance-item {
     top: 70px;
     right: 29%;
   }
-
+ 
   .adventure-item {
     top: 53%;
     left: 11%;
   }
-
+ 
   .imagination-item {
     top: 53%;
     right: 11%;
   }
-
+ 
   .grounding-item {
     bottom: 70px;
     left: 30%;
   }
-
+ 
   .charisma-item {
     bottom: 70px;
     right: 28%;
@@ -1328,40 +1428,40 @@ h2 {
     transform: none;
   }
 }
-
+ 
 /* Small tablets (>= 768px) */
 @media (min-width: 708px) and (max-width: 991px) {
   .energy-spectrum-container {
     height: 450px;
     margin-top: 1px;
   }
-
+ 
   .spectrum-image-wrapper img {
     width: 280px;
   }
-
+ 
   .energy-item .desktop-content {
     display: block;
     width: 200px;
   }
-
+ 
   .energy-item .mobile-content {
     display: none;
   }
-
+ 
   .desktop-content h2 {
     font-size: 0.9rem;
     font-weight: 500;
     margin: 0 0 5px 0;
   }
-
+ 
   .desktop-content .unit {
     font-size: 0.7rem;
     color: #9e8844;
     text-transform: uppercase;
     margin-left: 5px;
   }
-
+ 
   .desktop-content p {
     font-size: 0.8rem;
     font-weight: 400;
@@ -1370,7 +1470,7 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 0.5px;
   }
-
+ 
   .desktop-content .btn-energy {
     padding: 5px 7px;
     font-size: 0.7rem;
@@ -1381,7 +1481,7 @@ h2 {
     text-transform: uppercase;
     text-decoration: none;
   }
-
+ 
   /* Positioning for small tablets */
   .focus-item {
     top: 0;
@@ -1389,31 +1489,31 @@ h2 {
     transform: translateX(-50%);
     text-align: right;
   }
-
+ 
   .balance-item {
     top: 2px;
     right: 15%;
     text-align: left;
   }
-
+ 
   .adventure-item {
     top: 285px;
     left: 10px;
     text-align: right;
   }
-
+ 
   .imagination-item {
     top: 268px;
     right: 10px;
     text-align: left;
   }
-
+ 
   .grounding-item {
     bottom: -10px;
     left: 18%;
     text-align: right;
   }
-
+ 
   .charisma-item {
     bottom: 0px;
     right: 18%;
@@ -1422,83 +1522,83 @@ h2 {
     text-align: left;
   }
 }
-
+ 
 /* --- DESKTOP & LARGE TABLET STYLES (>= 992px) --- */
 @media (min-width: 992px) {
   /* Common styles for all desktop sizes */
   .energy-spectrum-section {
     min-height: 600px;
   }
-
+ 
   .energy-item .desktop-content {
     display: block;
   }
-
+ 
   .energy-item .mobile-content {
     display: none;
   }
-
+ 
   /* Button hover effects for all desktop sizes */
   .desktop-content .btn-energy:hover {
     color: white !important;
   }
-
+ 
   /* Color-specific hover backgrounds */
   .desktop-content .btn-energy.focus-color:hover {
     background-color: #8cc63f;
   }
-
+ 
   .desktop-content .btn-energy.balance-color:hover {
     background-color: #3d7d6d;
   }
-
+ 
   .desktop-content .btn-energy.adventure-color:hover {
     background-color: #f15a29;
   }
-
+ 
   .desktop-content .btn-energy.imagination-color:hover {
     background-color: #7d5ba6;
   }
-
+ 
   .desktop-content .btn-energy.grounding-color:hover {
     background-color: #a0522d;
   }
-
+ 
   .desktop-content .btn-energy.charisma-color:hover {
     background-color: #d63384;
   }
 }
-
+ 
 /* --- LARGE DESKTOP STYLES (>= 1364px) --- */
 @media (min-width: 1364px) {
   .energy-spectrum-section {
     min-height: 750px;
   }
-
+ 
   .energy-spectrum-container {
     width: 100%;
-    max-width: 1300px;
+    max-width: 1400px;
     height: 850px;
     margin-top: 1px;
   }
-
+ 
   .spectrum-image-wrapper img {
-    width: 450px;
+    width: 520px;
   }
-
+ 
   .desktop-content h2 {
     font-size: 2rem;
     font-weight: 600;
     margin: 0 0 5px 0;
   }
-
+ 
   .desktop-content .unit {
     font-size: 1rem;
     color: #9e8844;
     text-transform: uppercase;
     margin-left: 8px;
   }
-
+ 
   .desktop-content p {
     font-size: 1.4rem;
     font-weight: 400;
@@ -1507,7 +1607,7 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 0.5px;
   }
-
+ 
   .desktop-content .btn-energy {
     padding: 8px 9px;
     font-size: 0.9rem;
@@ -1520,7 +1620,7 @@ h2 {
     text-decoration: none;
     letter-spacing: 1px;
   }
-
+ 
   /* Large Desktop positioning */
   .focus-item {
     top: 12px;
@@ -1529,58 +1629,58 @@ h2 {
     width: 320px;
     text-align: right;
   }
-
+ 
   .focus-item .desktop-content {
     width: 280px;
     margin: 0 auto;
   }
-
+ 
   .balance-item {
     top: 12px;
     right: 16%;
     width: 320px;
     text-align: left;
   }
-
+ 
   .balance-item .desktop-content {
     width: 280px;
   }
-
+ 
   .adventure-item {
     top: 515px;
     left: 90px;
     width: 320px;
     text-align: right;
   }
-
+ 
   .adventure-item .desktop-content {
     width: 280px;
     margin-left: auto;
   }
-
+ 
   .imagination-item {
     top: 512px;
     right: 90px;
     width: 320px;
     text-align: left;
   }
-
+ 
   .imagination-item .desktop-content {
     width: 280px;
   }
-
+ 
   .grounding-item {
     bottom: 25px;
     left: 17%;
     width: 320px;
     text-align: right;
   }
-
+ 
   .grounding-item .desktop-content {
     width: 280px;
     margin-left: auto;
   }
-
+ 
   .charisma-item {
     bottom: 25px;
     right: 16%;
@@ -1589,47 +1689,47 @@ h2 {
     text-align: left;
     transform: none;
   }
-
+ 
   .charisma-item .desktop-content {
     width: 280px;
   }
 }
-
+ 
 /* --- MEDIUM DESKTOP/TABLET STYLES (992px - 1364px) --- */
 @media (min-width: 992px) and (max-width: 1363px) {
   .energy-spectrum-section {
     min-height: 600px;
   }
-
+ 
   .energy-spectrum-container {
     width: 100%;
-    max-width: 900px;
+    max-width: 1250px;
     height: 600px;
     margin-top: 1px;
   }
-
+ 
   .spectrum-image-wrapper img {
-    width: 320px;
+    width: 450px;
   }
-
+ 
   .energy-item .desktop-content {
     width: 230px;
   }
-
+ 
   .desktop-content h2 {
     font-size: 1.2rem;
     font-weight: 500;
     margin: 0 0 5px 0;
     display: inline-block;
   }
-
+ 
   .desktop-content .unit {
     font-size: 0.8rem;
     color: #9e8844;
     text-transform: uppercase;
     margin-left: 8px;
   }
-
+ 
   .desktop-content p {
     font-size: 1rem;
     font-weight: 400;
@@ -1638,7 +1738,7 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 0.5px;
   }
-
+ 
   .desktop-content .btn-energy {
     padding: 6px 8px;
     font-size: 0.8rem;
@@ -1651,7 +1751,7 @@ h2 {
     text-decoration: none;
     letter-spacing: 0.5px;
   }
-
+ 
   /* Medium Desktop positioning */
   .focus-item {
     top: 9px;
@@ -1660,58 +1760,58 @@ h2 {
     width: 240px;
     text-align: right;
   }
-
+ 
   .focus-item .desktop-content {
     width: 220px;
     margin: 0 auto;
   }
-
+ 
   .balance-item {
     top: 6px;
     right: 12%;
     width: 240px;
     text-align: left;
   }
-
+ 
   .balance-item .desktop-content {
     width: 220px;
   }
-
+ 
   .adventure-item {
     top: 370px;
     left: 30px;
     width: 240px;
     text-align: right;
   }
-
+ 
   .adventure-item .desktop-content {
     width: 220px;
     margin-left: auto;
   }
-
+ 
   .imagination-item {
     top: 350px;
     right: 20px;
     width: 240px;
     text-align: left;
   }
-
+ 
   .imagination-item .desktop-content {
     width: 220px;
   }
-
+ 
   .grounding-item {
     bottom: 0px;
     left: 15%;
     width: 240px;
     text-align: right;
   }
-
+ 
   .grounding-item .desktop-content {
     width: 220px;
     margin-left: auto;
   }
-
+ 
   .charisma-item {
     bottom: 16px;
     right: 15%;
@@ -1720,48 +1820,38 @@ h2 {
     width: 240px;
     text-align: left;
   }
-
+ 
   .charisma-item .desktop-content {
     width: 220px;
   }
 }
-
+ 
 /* =============================================== */
 /* === NEW ENERGY SPECTRUM SECTION STYLES END ==== */
 /* =============================================== */
+ 
+ 
 
-/* Phia philosophy */
+/* Phia philosophy start */
 
 .image-banner {
   position: relative;
   width: 100%;
-  overflow: hidden; /* makes fade + corners neat */
-  border-top-left-radius: 30px; /* rounded top corners */
-  border-top-right-radius: 30px;
-  margin-top: -20px;
-  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2); /* shadow effect */
+  overflow: hidden;
+  opacity: 0.95; /* Slightly faded look */
+  margin-top: -150px;
+  border-radius: 0 !important;
+  box-shadow: none !important;
 }
 
 .image-banner img {
   width: 100%;
   height: auto;
   display: block;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-}
-
-/*  bottom fade into white */
-.fade-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 40%;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0) 100%,
-    /* fully clear at top of fade */ #fff 100% /* fully white at very bottom */
-  );
+  opacity: 0.9; /* Slightly faded look */
+  object-fit: cover;
+  border-radius: 0 !important;
+  box-shadow: none !important;
 }
 
 /* Center text */
@@ -1774,8 +1864,11 @@ h2 {
   font-size: 3.5rem;
   font-weight: 700;
   text-align: center;
-  z-index: 2; /* text above fade */
+  z-index: 2;
 }
+
+/* Phia philosophy end */
+
 
 /* Footer */
 
@@ -2372,7 +2465,12 @@ a:hover {
   margin-top: -50px;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  padding-left: 40px;
+  padding-right: 40px;
+ 
 }
+
+
 
 /* =============================
    WAVE FOR YOU SECTION
@@ -2381,11 +2479,36 @@ a:hover {
   margin-top: 30px;
 }
 
+.wavee{
+  font-size: 8rem;
+  color: #a8903b; /* golden color */
+  font-weight: 800; /* lighter look */
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  margin-top: -60px;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+
 /* =============================
    SUPERCHARGED SECTION
    ============================= */
 .supercharged-section {
   margin-top: 10px;
+  /* font-size: 9rem; */
+}
+
+.supercharged {
+  font-size: 9rem;
+  color: #a8903b; /* golden color */
+  font-weight: lighter; /* lighter look */
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  margin-top: -60px;
+  font-family: 'Raleway', sans-serif;
+
+
 }
 
 /* =============================
@@ -3056,6 +3179,7 @@ a:hover {
 .highlight-text-section {
   padding-top: 3rem;
   padding-bottom: 3rem;
+  
 }
 
 /* =============================
@@ -4314,3 +4438,73 @@ body {
 }
 
 /* event page CSS end /////////////////////   */
+
+/* ============================================
+   RETAILERS SECTION start
+   Scoped with #retailers-section
+   ============================================ */
+
+#retailers-section {
+  font-family: 'Raleway', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+#retailers-section  h1.section-title {
+    font-weight:lighter;
+    font-size: 2.8rem;
+    letter-spacing: 4px;
+    text-align: center;
+    color: #9e8844;
+    text-transform: uppercase;
+
+}
+/* Section Titles */
+#retailers-section h2.section-title {
+  text-transform: uppercase;
+  text-align: center;
+  color: #9e8844;
+  margin: 2rem 0 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* Retailer Cards */
+#retailers-section .retailer-card {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#retailers-section .name{
+  color: #9e8844;
+    font-weight:50;
+}
+
+#retailers-section .retailer-card img {
+  max-height: 180px;
+  max-width: 200px;
+  margin-bottom: 0.75rem;
+  object-fit: contain;
+}
+
+#retailers-section .retailer-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+#retailers-section .retailer-card .name {
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  #retailers-section .retailer-card img {
+    max-height: 200px;
+    max-width: 200px;
+  }
+}
+
+/* ============================================
+   RETAILERS SECTION end
+   Scoped with #retailers-section
+   ============================================ */
