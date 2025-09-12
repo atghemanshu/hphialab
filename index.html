@@ -19,8 +19,12 @@
   <!-- Font Awesome for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
+   <!-- Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 
   <link rel="stylesheet" href="css/style.css" />
+  
 
   <!-- Link to your JS file -->
   <script src="js/main.js"></script>
@@ -540,7 +544,7 @@
   </div>
   <!-- Image gallery -->
   <div class="container gallery who-benefits-gallery">
-    <img src="img/PE-display-scaled.avif" alt="Story Image 1" class="rounded-4 ">
+    <img src="img/Neve Pink.jpg" alt="Story Image 1" class="rounded-4 ">
     <img src="img/Kristin.jpeg" alt="Story Image 2" class="rounded-4">
     <img src="img/rico-vertile-2-1.png" alt="Story Image 3" class="rounded-4">
     <img src="img/Mary-home.jpeg" alt="Story Image 4" class="rounded-4">
@@ -557,56 +561,99 @@
   <!-- Testimonial Section -->
   <div class="testimonial-section">
     <h2>WHAT PEOPLE ARE SAYING</h2>
-    <div class="testimonial-container">
+    
+    <!-- Swiper Structure -->
+    <div class="swiper swiper-container">
+        <div class="swiper-wrapper">
 
-      <!-- Testimonial 1 -->
-      <div class="testimonial-card">
-        <div class="testimonial-image">
-          <img src="img/pure-energy-600x600.jpeg" alt="Energy Bouquet">
-        </div>
-        <h3>Energy Bouquet</h3>
-        <p>
-          This was the first product that I purchased and fell in love with these products. It helps me with anxiety and
-          centering myself and also smells amazing! I feel great after using this – I keep one in my purse and one in my
-          car!
-        </p>
-        <span class="author">Melissa Lyon</span>
-      </div>
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <div class="testimonial-card">
+                    <div class="testimonial-image"><img src="img/bottle.webp" alt="Serum"></div>
+                    <h3>LOVE This Serum</h3>
+                    <p>LOVE this serum for my hair! Great for taming those little fly aways or keeping my hair under control when traveling to humid climates. I’ve also turned my mom and sisters who live in Louisiana on to this product. They use it daily!</p>
+                    <span class="author">Kelly Holliday</span>
+                </div>
+            </div>
 
-      <!-- Testimonial 2 -->
-      <div class="testimonial-card">
-        <div class="testimonial-image">
-          <img src="img/bottle.jpg" alt="Serum">
-        </div>
-        <h3>LOVE This Serum</h3>
-        <p>
-          LOVE this serum for my hair! Great for taming those little fly aways or keeping my hair under control when
-          traveling to humid climates. I’ve also turned my mom and sisters who live in Louisiana on to this product.
-          They use it daily!
-        </p>
-        <span class="author">Kelly Holliday</span>
-      </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <div class="testimonial-card">
+                    <div class="testimonial-image"><img src="img/bio.webp" alt="Quantum Oil"></div>
+                    <h3>Amazing Quantum Oil</h3>
+                    <p>I just really had to say how amazing this quantum body oil is. Nothing else compares. It actually helps me with anxiety when nothing else does. I’ve tried other body oils, and while they are nice and good quality, nothing compares to the healing effect of this oil. It is very nurturing and my skin…
+                      <a class="read-more" href="clientreview.html">Read more</a></p>
+                    <span class="author">Katrina Nguyen</span>
+                </div>
+            </div>
 
-      <!-- Testimonial 3 -->
-      <div class="testimonial-card">
-        <div class="testimonial-image">
-          <img src="img/bio.png" alt="Quantum Oil">
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+                <div class="testimonial-card">
+                    <div class="testimonial-image"><img src="img/bio.webp" alt="Happy on"></div>
+                    <h3>Get Your Happy On</h3>
+                    <p>I was suffering from depression and lack of direction.  I had a Phia treatment and started using Phia products and really started to feel better.  Now two year later I am much happier and look way more healthy.</p>
+                    <span class="author">Jaime Mccowen</span>
+                </div>
+            </div>
+            
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+                <div class="testimonial-card">
+                    <div class="testimonial-image"><img src="img/pure-energy.webp" alt="Energy Bouquet"></div>
+                    <h3>Energy Bouquet</h3>
+                    <p>This was the first product that I purchased and fell in love with these products. It helps me with anxiety and centering myself and also smells amazing! I feel great after using this – I keep one in my purse and one in my car!</p>
+                    <span class="author">Melissa Lyon</span>
+                </div>
+            </div>
+
         </div>
-        <h3>Amazing Quantum Oil</h3>
-        <p>
-          I just really had to say how amazing this quantum body oil is. Nothing else compares. It actually helps me
-          with anxiety
-          when nothing else does. I’ve tried other body oils, and while they are nice and good quality,
-          nothing compares to the healing effect of this oil. It is very nurturing and my skin...
-          <a class="htestimonial3" href="clientreview.html">Read
-            more</a>
-        </p>
-        <span class="author">Katrina Nguyen</span>
-      </div>
-      <!-- Add more testimonials as needed -->
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Add Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </div>
   </div>
 
+  <!-- Swiper's JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".swiper-container", {
+        loop: true, // Enables continuous looping
+        slidesPerView: 1,
+        spaceBetween: 30,
+        
+        // Responsive Breakpoints
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            }
+        },
+        
+        // Navigation Arrows
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+
+        // Pagination
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+  </script>
+
+
+  <!-- testimonial section end--> 
 
   <!-- Story Section -->
   <div class=" story-section text-center">
@@ -615,45 +662,77 @@
   </div>
 
   <!-- Instagram & Ambassador Section -->
-  <div class="container py-5 instagram-section">
-    <div class="row align-items-center">
-      <!-- Instagram Column -->
-      <div class="col-md-6 mb-4 text-center">
-        <h2>INSTAGRAM @PHIA.LAB</h2>
-        <img src="img/phia-logo.avif" alt="Phia Lab Logo" class="logo">
-        <div class="profile-info">
-          phia.lab
-          <span>211 Posts</span>
-          <span>2,276 Followers</span>
-        </div>
-        <hr>
-        <div class="row g-2 justify-content-center mb-3">
-          <div class="col-4"><img src="img/insta1.webp" alt="Instagram 1" class="img-fluid"></div>
-          <div class="col-4"><img src="img/insta2.webp" alt="Instagram 2" class="img-fluid"></div>
-          <div class="col-4"><img src="img/insta3.webp" alt="Instagram 3" class="img-fluid"></div>
-          <div class="col-4"><img src="img/insta4.webp" alt="Instagram 4" class="img-fluid"></div>
-        </div>
-        <div class="d-flex justify-content-center gap-2">
-          <button class="btn btn-outline-secondary btn-load">⋯ LOAD MORE</button>
-          <button class="btn btn-follow"><i class="bi bi-instagram"></i> FOLLOW ON INSTAGRAM</button>
-        </div>
-      </div>
+   <div class="container py-5">
+        <div class="row">
+            <!-- Instagram Column -->
+            <div class="col-lg-6 instagram-column">
+                <h2 class="text-center section-title">INSTAGRAM @PHIA.LAB</h2>
 
-      <!-- Ambassador Column -->
-      <div class="col-md-6 text-center ambassador-section">
-        <h2>BECOME A PHIA AMBASSADOR</h2>
-        <img src="img/flower-divider.avif" alt="Phia Divider" class="divider">
-        <p>
-          Phia Lab invites you to be part of our mission—connecting people to the natural bioenergetic forces that power
-          holistic wellness. As a Phia Ambassador, you’ll join a vibrant community of passionate creators and wellness
-          advocates, gain exclusive early access to new bioenergetic product launches, receive insider updates before
-          the public, and grow your social presence while sharing the transformative benefits of Phia’s energy-infused
-          wellness solutions.
-        </p>
-        <button class="btn btn-outline-secondary btn-ambassador">BE AN AMBASSADOR</button>
-      </div>
+                <div class="profile-header d-flex align-items-center my-4">
+                    <img src="img/phia-logo.webp" alt="Phia Lab Logo" class="logo">
+                    <div class="profile-info d-flex justify-content-start align-items-center">
+                        <div class="username">phia.lab</div>
+                        <span class=" ps-3 stats">
+                            <span>211 Posts</span>
+                            <span>2,277 Followers</span>
+                        </span>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- 8-Image Grid -->
+                <div class="instagram-grid">
+                    <!-- Top Block: Large image + 2x2 grid -->
+                    <div class="row g-2 mb-2">
+                        <div class="col-md-6 col-sm-12 col-12 col-lg-6">
+                            <img src="img/insta1.webp" alt="Instagram 1" class="img-fluid large-image">
+                        </div>
+                        <div class="col-12 col-md-6 col-sm-12 col-12 col-lg-6">
+                            <div class="row g-2">
+                                <div class="col-12 col-md-6 col-sm-12 col-lg-6"><img src="img/insta1.webp" alt="Instagram 2" class="img-fluid small-image"></div>
+                                <div class="col-12 col-md-6 col-sm-12 col-lg-6"><img src="img/insta3.webp" alt="Instagram 3" class="img-fluid small-image"></div>
+                                <div class="col-12 col-md-6 col-sm-12 col-lg-6"><img src="img/insta4.webp" alt="Instagram 4" class="img-fluid small-image"></div>
+                                <div class="col-12 col-md-6 col-sm-12 col-lg-6"><img src="img/insta5.webp" alt="Instagram 5" class="img-fluid small-image"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bottom Row: 3 images -->
+                    <div class="row g-2">
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-3"><img src="img/insta6.webp" alt="Instagram 6" class="img-fluid small-image"></div>
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-3"><img src="img/insta7.webp" alt="Instagram 7" class="img-fluid small-image"></div>
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-3"><img src="img/insta8.webp" alt="Instagram 8" class="img-fluid small-image"></div>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="text-center mt-4">
+                    <div class="d-inline-flex gap-2">
+                        <button class="btn btn-load">⋯ LOAD MORE</button>
+                        <button class="btn btn-follow"><i class="bi bi-instagram"></i> FOLLOW ON INSTAGRAM</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ambassador Column -->
+            <div class="col-lg-6 ambassador-column">
+                <h2 class="text-center section-title">BECOME A PHIA AMBASSADOR</h2>
+                <div class="text-center">
+                    <img src="img/flower-divider.webp" alt="Phia Divider" class="divider">
+                </div>
+                <p>
+                    Phia Lab invites you to be part of our mission—connecting people to the natural bioenergetic forces that power
+                    holistic wellness. As a Phia Ambassador, you’ll join a vibrant community of passionate creators and wellness
+                    advocates, gain exclusive early access to new bioenergetic product launches, receive insider updates before
+                    the public, and grow your social presence while sharing the transformative benefits of Phia’s energy-infused
+                    wellness solutions.
+                </p>
+                <div class="text-center">
+                    <button class="btn btn-ambassador">BE AN AMBASSADOR</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+
   <!-- Instagram & Ambassador Section End-->
 
   <!-- Salons & Spas Section -->

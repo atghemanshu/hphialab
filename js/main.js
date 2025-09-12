@@ -32,3 +32,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     //   <!-- Toggle: change bars <-> X -->
+
+
+    // <!-- Custom JS for Testimonial section initializing Swiper -->
+    
+    
+
