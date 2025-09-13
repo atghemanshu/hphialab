@@ -694,6 +694,8 @@ h2 {
     font-size: 1rem;
   }
 }
+/* spectrum start */
+
 .spectrum-container {
   position: relative;
   display: flex;
@@ -790,7 +792,7 @@ h2 {
   border-color: #d63384;
   color: #d63384;
 }
-/* Botanical world cards  */
+/* Botanical world cards  stat section*/
 .stats-section {
   text-align: center;
   padding: 20px 10px;
