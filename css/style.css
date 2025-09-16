@@ -3432,6 +3432,7 @@ body {
 
 #services-description {
   text-align: justify;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* Buttons */
@@ -3446,6 +3447,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
+  font-family: 'Raleway', sans-serif;
 }
 
 #btn-book:hover,
@@ -3453,12 +3455,14 @@ body {
   background: #9a883e;
   color: #fff;
   text-decoration: none;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* Headings */
 #section-heading {
   color: #9a883e;
   font-weight: 300;
+  font-family: 'Raleway', sans-serif;
 }
 
 #sub-heading-services,
@@ -3468,6 +3472,7 @@ body {
   text-transform: uppercase;
   margin-bottom: 30px;
   font-weight: 600;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* Responsive */
@@ -3653,6 +3658,7 @@ body {
   letter-spacing: 1px;
   text-align: center;
   color: #9e8844;
+   font-family: 'Raleway', sans-serif;
 }
 
 /* PHILOSOPHY heading */
@@ -3660,6 +3666,7 @@ body {
   font-size: 2.8rem;
   font-weight: 400;
   margin-bottom: 2.5rem;
+   font-family: 'Raleway', sans-serif;
 }
 
 /* INGREDIENTS + PHI headings */
@@ -3668,6 +3675,7 @@ body {
   font-weight: 600;
   margin-top: 0;
   margin-bottom: 1.5rem;
+   font-family: 'Raleway', sans-serif;
 }
 
 /* Body text */
@@ -3677,10 +3685,12 @@ body {
   color: #333333;
   text-align: left;
   margin-bottom: 1rem;
+   font-family: 'Raleway', sans-serif;
 }
 
 #philosophy-page .text-justify {
   text-align: justify;
+   font-family: 'Raleway', sans-serif;
 }
 
 /* Ingredient List */
@@ -3689,6 +3699,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   text-align: left;
+   font-family: 'Raleway', sans-serif;
 }
 
 /* Images */
@@ -3701,15 +3712,18 @@ body {
 #philosophy-page section.sub-section {
   padding-top: 1rem !important;
   padding-bottom: 1rem !important; /* fixed missing value */
+   font-family: 'Raleway', sans-serif;
 }
 
 /* Responsive scaling */
 @media (max-width: 992px) {
   #philosophy-page h2.section-title.philosophy-title {
     font-size: 2.2rem;
+     font-family: 'Raleway', sans-serif;
   }
   #philosophy-page h2.section-title.sub-title {
     font-size: 1.8rem;
+     font-family: 'Raleway', sans-serif;
   }
 }
 
@@ -3717,11 +3731,13 @@ body {
   #philosophy-page h2.section-title.philosophy-title {
     font-size: 2rem;
     margin-bottom: 1.5rem;
+     font-family: 'Raleway', sans-serif;
   }
   #philosophy-page h2.section-title.sub-title {
     font-size: 1.3rem;
     margin-top: 0.8rem;
     margin-bottom: 0.8rem;
+     font-family: 'Raleway', sans-serif;
   }
 
   /* Text */
@@ -3730,6 +3746,7 @@ body {
     font-size: 14px;
     line-height: 1.7;
     text-align: justify;
+     font-family: 'Raleway', sans-serif;
   }
 
   /* Images */
@@ -3904,7 +3921,7 @@ body {
 }
 /* Research.html page CSS end ///////////////////// */
 
-/* Education Page Footer start///////////////////// */
+/* Education Page  start///////////////////// */
  body {
             background-color: #fff;
         }
@@ -4144,7 +4161,7 @@ a:hover {
 
 /* FAQ Footer page CSS end ///////////////////// */
 
-/* Shipping & returns page footer CSS start ///////////////////// */
+/* Shipping & returns page  CSS start ///////////////////// */
 body {
     font-family: 'Raleway', sans-serif;
     background-color: #fff;
